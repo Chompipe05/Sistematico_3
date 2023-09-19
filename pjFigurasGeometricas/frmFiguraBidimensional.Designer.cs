@@ -30,14 +30,14 @@
         {
             gbCuadrado = new GroupBox();
             gbResultadoCuadrado = new GroupBox();
-            gbValoresCuadrado = new GroupBox();
-            txtLado = new TextBox();
-            lblLado = new Label();
-            btnCalcularCuadrado = new Button();
-            textBox2 = new TextBox();
-            lblAreaCuadrado = new Label();
             textBox3 = new TextBox();
             lblPerimetroCuadrado = new Label();
+            textBox2 = new TextBox();
+            lblAreaCuadrado = new Label();
+            gbValoresCuadrado = new GroupBox();
+            txtLado = new TextBox();
+            lblLadoCuadrado = new Label();
+            btnCalcularCuadrado = new Button();
             gbTriangulo = new GroupBox();
             gbResultadoTriangulo = new GroupBox();
             textBox4 = new TextBox();
@@ -45,11 +45,13 @@
             textBox5 = new TextBox();
             lblAreaTriangulo = new Label();
             gbValoresTriangulo = new GroupBox();
+            textBox1 = new TextBox();
+            lblLadoTriangulo = new Label();
+            txtAltura = new TextBox();
+            lblAltura = new Label();
             txtBase = new TextBox();
             lblBase = new Label();
             btnCalcularTriangulo = new Button();
-            txtAltura = new TextBox();
-            lblAltura = new Label();
             gbCirculo = new GroupBox();
             gbResultadoCirculo = new GroupBox();
             textBox8 = new TextBox();
@@ -97,42 +99,22 @@
             gbResultadoCuadrado.TabStop = false;
             gbResultadoCuadrado.Text = "Resultados";
             // 
-            // gbValoresCuadrado
+            // textBox3
             // 
-            gbValoresCuadrado.Controls.Add(txtLado);
-            gbValoresCuadrado.Controls.Add(lblLado);
-            gbValoresCuadrado.Location = new Point(15, 26);
-            gbValoresCuadrado.Name = "gbValoresCuadrado";
-            gbValoresCuadrado.Size = new Size(250, 125);
-            gbValoresCuadrado.TabIndex = 3;
-            gbValoresCuadrado.TabStop = false;
-            gbValoresCuadrado.Text = "Introduzca los valores";
+            textBox3.Enabled = false;
+            textBox3.Location = new Point(119, 75);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(125, 27);
+            textBox3.TabIndex = 5;
             // 
-            // txtLado
+            // lblPerimetroCuadrado
             // 
-            txtLado.Location = new Point(96, 35);
-            txtLado.Name = "txtLado";
-            txtLado.Size = new Size(125, 27);
-            txtLado.TabIndex = 1;
-            // 
-            // lblLado
-            // 
-            lblLado.AutoSize = true;
-            lblLado.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            lblLado.Location = new Point(17, 38);
-            lblLado.Name = "lblLado";
-            lblLado.Size = new Size(45, 20);
-            lblLado.TabIndex = 2;
-            lblLado.Text = "Lado:";
-            // 
-            // btnCalcularCuadrado
-            // 
-            btnCalcularCuadrado.Location = new Point(15, 171);
-            btnCalcularCuadrado.Name = "btnCalcularCuadrado";
-            btnCalcularCuadrado.Size = new Size(94, 29);
-            btnCalcularCuadrado.TabIndex = 0;
-            btnCalcularCuadrado.Text = "Calcular";
-            btnCalcularCuadrado.UseVisualStyleBackColor = true;
+            lblPerimetroCuadrado.AutoSize = true;
+            lblPerimetroCuadrado.Location = new Point(17, 78);
+            lblPerimetroCuadrado.Name = "lblPerimetroCuadrado";
+            lblPerimetroCuadrado.Size = new Size(76, 20);
+            lblPerimetroCuadrado.TabIndex = 4;
+            lblPerimetroCuadrado.Text = "Perimetro:";
             // 
             // textBox2
             // 
@@ -151,22 +133,43 @@
             lblAreaCuadrado.TabIndex = 2;
             lblAreaCuadrado.Text = "Area:";
             // 
-            // textBox3
+            // gbValoresCuadrado
             // 
-            textBox3.Enabled = false;
-            textBox3.Location = new Point(119, 75);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
-            textBox3.TabIndex = 5;
+            gbValoresCuadrado.Controls.Add(txtLado);
+            gbValoresCuadrado.Controls.Add(lblLadoCuadrado);
+            gbValoresCuadrado.Location = new Point(15, 26);
+            gbValoresCuadrado.Name = "gbValoresCuadrado";
+            gbValoresCuadrado.Size = new Size(250, 125);
+            gbValoresCuadrado.TabIndex = 3;
+            gbValoresCuadrado.TabStop = false;
+            gbValoresCuadrado.Text = "Introduzca los valores";
             // 
-            // lblPerimetroCuadrado
+            // txtLado
             // 
-            lblPerimetroCuadrado.AutoSize = true;
-            lblPerimetroCuadrado.Location = new Point(17, 78);
-            lblPerimetroCuadrado.Name = "lblPerimetroCuadrado";
-            lblPerimetroCuadrado.Size = new Size(76, 20);
-            lblPerimetroCuadrado.TabIndex = 4;
-            lblPerimetroCuadrado.Text = "Perimetro:";
+            txtLado.Location = new Point(96, 35);
+            txtLado.Name = "txtLado";
+            txtLado.Size = new Size(125, 27);
+            txtLado.TabIndex = 1;
+            // 
+            // lblLadoCuadrado
+            // 
+            lblLadoCuadrado.AutoSize = true;
+            lblLadoCuadrado.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLadoCuadrado.Location = new Point(17, 38);
+            lblLadoCuadrado.Name = "lblLadoCuadrado";
+            lblLadoCuadrado.Size = new Size(45, 20);
+            lblLadoCuadrado.TabIndex = 2;
+            lblLadoCuadrado.Text = "Lado:";
+            // 
+            // btnCalcularCuadrado
+            // 
+            btnCalcularCuadrado.Location = new Point(15, 171);
+            btnCalcularCuadrado.Name = "btnCalcularCuadrado";
+            btnCalcularCuadrado.Size = new Size(94, 29);
+            btnCalcularCuadrado.TabIndex = 0;
+            btnCalcularCuadrado.Text = "Calcular";
+            btnCalcularCuadrado.UseVisualStyleBackColor = true;
+            btnCalcularCuadrado.Click += btnCalcularCuadrado_Click;
             // 
             // gbTriangulo
             // 
@@ -175,7 +178,7 @@
             gbTriangulo.Controls.Add(btnCalcularTriangulo);
             gbTriangulo.Location = new Point(315, 12);
             gbTriangulo.Name = "gbTriangulo";
-            gbTriangulo.Size = new Size(284, 360);
+            gbTriangulo.Size = new Size(284, 381);
             gbTriangulo.TabIndex = 5;
             gbTriangulo.TabStop = false;
             gbTriangulo.Text = "Triangulo";
@@ -186,7 +189,7 @@
             gbResultadoTriangulo.Controls.Add(lblPerimetroTriangulo);
             gbResultadoTriangulo.Controls.Add(textBox5);
             gbResultadoTriangulo.Controls.Add(lblAreaTriangulo);
-            gbResultadoTriangulo.Location = new Point(15, 221);
+            gbResultadoTriangulo.Location = new Point(15, 243);
             gbResultadoTriangulo.Name = "gbResultadoTriangulo";
             gbResultadoTriangulo.Size = new Size(250, 125);
             gbResultadoTriangulo.TabIndex = 4;
@@ -229,46 +232,39 @@
             // 
             // gbValoresTriangulo
             // 
+            gbValoresTriangulo.Controls.Add(textBox1);
+            gbValoresTriangulo.Controls.Add(lblLadoTriangulo);
             gbValoresTriangulo.Controls.Add(txtAltura);
             gbValoresTriangulo.Controls.Add(lblAltura);
             gbValoresTriangulo.Controls.Add(txtBase);
             gbValoresTriangulo.Controls.Add(lblBase);
             gbValoresTriangulo.Location = new Point(15, 26);
             gbValoresTriangulo.Name = "gbValoresTriangulo";
-            gbValoresTriangulo.Size = new Size(250, 125);
+            gbValoresTriangulo.Size = new Size(250, 164);
             gbValoresTriangulo.TabIndex = 3;
             gbValoresTriangulo.TabStop = false;
             gbValoresTriangulo.Text = "Introduzca los valores";
             // 
-            // txtBase
+            // textBox1
             // 
-            txtBase.Location = new Point(98, 38);
-            txtBase.Name = "txtBase";
-            txtBase.Size = new Size(125, 27);
-            txtBase.TabIndex = 1;
+            textBox1.Location = new Point(103, 38);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(125, 27);
+            textBox1.TabIndex = 5;
             // 
-            // lblBase
+            // lblLadoTriangulo
             // 
-            lblBase.AutoSize = true;
-            lblBase.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            lblBase.Location = new Point(17, 38);
-            lblBase.Name = "lblBase";
-            lblBase.Size = new Size(43, 20);
-            lblBase.TabIndex = 2;
-            lblBase.Text = "Base:";
-            // 
-            // btnCalcularTriangulo
-            // 
-            btnCalcularTriangulo.Location = new Point(15, 171);
-            btnCalcularTriangulo.Name = "btnCalcularTriangulo";
-            btnCalcularTriangulo.Size = new Size(94, 29);
-            btnCalcularTriangulo.TabIndex = 0;
-            btnCalcularTriangulo.Text = "Calcular";
-            btnCalcularTriangulo.UseVisualStyleBackColor = true;
+            lblLadoTriangulo.AutoSize = true;
+            lblLadoTriangulo.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLadoTriangulo.Location = new Point(22, 38);
+            lblLadoTriangulo.Name = "lblLadoTriangulo";
+            lblLadoTriangulo.Size = new Size(42, 20);
+            lblLadoTriangulo.TabIndex = 6;
+            lblLadoTriangulo.Text = "lado:";
             // 
             // txtAltura
             // 
-            txtAltura.Location = new Point(98, 80);
+            txtAltura.Location = new Point(103, 122);
             txtAltura.Name = "txtAltura";
             txtAltura.Size = new Size(125, 27);
             txtAltura.TabIndex = 3;
@@ -277,11 +273,37 @@
             // 
             lblAltura.AutoSize = true;
             lblAltura.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            lblAltura.Location = new Point(17, 80);
+            lblAltura.Location = new Point(22, 122);
             lblAltura.Name = "lblAltura";
             lblAltura.Size = new Size(52, 20);
             lblAltura.TabIndex = 4;
             lblAltura.Text = "Altura:";
+            // 
+            // txtBase
+            // 
+            txtBase.Location = new Point(103, 80);
+            txtBase.Name = "txtBase";
+            txtBase.Size = new Size(125, 27);
+            txtBase.TabIndex = 1;
+            // 
+            // lblBase
+            // 
+            lblBase.AutoSize = true;
+            lblBase.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblBase.Location = new Point(22, 80);
+            lblBase.Name = "lblBase";
+            lblBase.Size = new Size(43, 20);
+            lblBase.TabIndex = 2;
+            lblBase.Text = "Base:";
+            // 
+            // btnCalcularTriangulo
+            // 
+            btnCalcularTriangulo.Location = new Point(15, 208);
+            btnCalcularTriangulo.Name = "btnCalcularTriangulo";
+            btnCalcularTriangulo.Size = new Size(94, 29);
+            btnCalcularTriangulo.TabIndex = 0;
+            btnCalcularTriangulo.Text = "Calcular";
+            btnCalcularTriangulo.UseVisualStyleBackColor = true;
             // 
             // gbCirculo
             // 
@@ -420,7 +442,7 @@
         #endregion
 
         private GroupBox gbCuadrado;
-        private Label lblLado;
+        private Label lblLadoCuadrado;
         private TextBox txtLado;
         private Button btnCalcularCuadrado;
         private GroupBox gbResultadoCuadrado;
@@ -452,5 +474,7 @@
         private Label lblRadio;
         private Button btnCalcularCirculo;
         private Button btnSalir;
+        private TextBox textBox1;
+        private Label lblLadoTriangulo;
     }
 }

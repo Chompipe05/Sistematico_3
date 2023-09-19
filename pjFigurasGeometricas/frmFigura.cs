@@ -16,5 +16,17 @@ namespace pjFigurasGeometricas
         {
             InitializeComponent();
         }
+
+        private void btnBidimensional_Click(object sender, EventArgs e)
+        {
+            frmFiguraBidimensional frmFB = new frmFiguraBidimensional();
+            frmFB.ShowDialog();
+        }
+
+        private void btnTridimensional_Click(object sender, EventArgs e)
+        {
+            frmFiguraTridimensional frmFT = new frmFiguraTridimensional();
+            frmFT.ShowDialog();
+        }
     }
 }

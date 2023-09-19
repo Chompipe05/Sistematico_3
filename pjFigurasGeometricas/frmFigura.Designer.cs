@@ -28,30 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
+            btnBidimensional = new Button();
+            btnTridimensional = new Button();
             label1 = new Label();
             SuspendLayout();
             // 
-            // button1
+            // btnBidimensional
             // 
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(68, 133);
-            button1.Name = "button1";
-            button1.Size = new Size(163, 51);
-            button1.TabIndex = 0;
-            button1.Text = "Bidimensional";
-            button1.UseVisualStyleBackColor = true;
+            btnBidimensional.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnBidimensional.Location = new Point(68, 133);
+            btnBidimensional.Name = "btnBidimensional";
+            btnBidimensional.Size = new Size(163, 51);
+            btnBidimensional.TabIndex = 0;
+            btnBidimensional.Text = "Bidimensional";
+            btnBidimensional.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnTridimensional
             // 
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(344, 133);
-            button2.Name = "button2";
-            button2.Size = new Size(160, 51);
-            button2.TabIndex = 1;
-            button2.Text = "Tridimensional";
-            button2.UseVisualStyleBackColor = true;
+            btnTridimensional.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnTridimensional.Location = new Point(344, 133);
+            btnTridimensional.Name = "btnTridimensional";
+            btnTridimensional.Size = new Size(160, 51);
+            btnTridimensional.TabIndex = 1;
+            btnTridimensional.Text = "Tridimensional";
+            btnTridimensional.UseVisualStyleBackColor = true;
+            btnTridimensional.Click += btnTridimensional_Click;
             // 
             // label1
             // 
@@ -69,8 +70,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(576, 235);
             Controls.Add(label1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnTridimensional);
+            Controls.Add(btnBidimensional);
             Name = "frmFigura";
             Text = "frmSelectorDeFiguras";
             ResumeLayout(false);
@@ -79,8 +80,8 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
+        private Button btnBidimensional;
+        private Button btnTridimensional;
         private Label label1;
     }
 }
